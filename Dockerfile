@@ -1,7 +1,4 @@
-FROM python
+FROM nginx
 MAINTAINER  ashutoshh@linux.com
-RUN  mkdir  /app
-WORKDIR  .  .
-RUN pip install -r requirements.txt
-ENTRYPOINT  ["python"]
-CMD ["app.py"]
+WORKDIR  /usr/share/nginx/html/
+COPY  .  .
