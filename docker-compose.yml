@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+ flaskapp:
+  image: dockerashu/flaskapp:v1
+  build: .
+  container_name: ashuc1
+  ports:
+   - "5000:5000"
+  volumes:
+   - 
